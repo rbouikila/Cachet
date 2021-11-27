@@ -23,6 +23,8 @@ return [
         'group' => [
             'other' => 'Pozostałe komponenty',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
@@ -32,7 +34,7 @@ return [
         'stickied'     => 'Stickied Incidents',
         'scheduled'    => 'Maintenance',
         'scheduled_at' => ', geplant :timestamp',
-        'posted'       => 'Posted :timestamp',
+        'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Untersuchungen laufen',
@@ -75,24 +77,29 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Abonnieren Sie um die neuesten Updates zu erhalten.',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
         'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Abonnieren',
         'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Jesteś obecnie zapisany na wszystkie aktualizacje.',
-            'my_subscriptions' => 'Jesteś obecnie zapisany na poniższe aktualizacje.',
-            'manage_at_link'   => 'Manage your subscriptions at :link',
+            'notifications'       => 'Benachrichtigungen',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Jesteś obecnie zapisany na wszystkie aktualizacje.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Jesteś obecnie zapisany na poniższe aktualizacje.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Aktualisierungen per E-Mail abonnieren.',
-            'subscribed'         => 'Sie haben E-Mail-Benachrichtigungen abonniert, überprüfen Sie bitte Ihre E-Mail, um Ihr Abonnement zu bestätigen.',
-            'verified'           => 'Ihre E-Mail-Abonnement ist bestätigt worden. Danke!',
-            'manage'             => 'Zarządzanie subskrypcją',
-            'unsubscribe'        => 'Von E-Mail-Updates deabonnieren.',
-            'unsubscribed'       => 'Ihre E-Mail-Abonnement wurde gekündigt.',
-            'failure'            => 'Etwas ist mit dem Abonnement schief gelaufen.',
-            'already-subscribed' => 'Subskrypcja niemożliwa, :email jest już zapisany.',
+            'manage_subscription' => 'We\'ve sent you an email, please click the link to manage your subscription',
+            'subscribe'           => 'Aktualisierungen per E-Mail abonnieren.',
+            'subscribed'          => 'Sie haben E-Mail-Benachrichtigungen abonniert, überprüfen Sie bitte Ihre E-Mail, um Ihr Abonnement zu bestätigen.',
+            'updated-subscribe'   => 'You\'ve succesfully updated your subscriptions.',
+            'verified'            => 'Ihre E-Mail-Abonnement ist bestätigt worden. Danke!',
+            'manage'              => 'Zarządzanie subskrypcją',
+            'unsubscribe'         => 'Von E-Mail-Updates deabonnieren.',
+            'unsubscribed'        => 'Ihre E-Mail-Abonnement wurde gekündigt.',
+            'failure'             => 'Etwas ist mit dem Abonnement schief gelaufen.',
+            'already-subscribed'  => 'Subskrypcja niemożliwa, :email jest już zapisany.',
         ],
     ],
 

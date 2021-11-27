@@ -23,6 +23,8 @@ return [
         'group' => [
             'other' => 'Другие компоненты',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
@@ -32,7 +34,7 @@ return [
         'stickied'     => 'Stickied Incidents',
         'scheduled'    => 'Maintenance',
         'scheduled_at' => ', запланированы :timestamp',
-        'posted'       => 'Posted :timestamp',
+        'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Проводим анализ проблемы',
@@ -75,24 +77,29 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Подпишитесь, чтобы получать информацию об изменениях',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
         'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Подписаться',
         'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Вы подписаны на все изменения.',
-            'my_subscriptions' => 'Вы подписаны на следующие изменения.',
-            'manage_at_link'   => 'Manage your subscriptions at :link',
+            'notifications'       => 'Уведомления',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Вы подписаны на все изменения.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Вы подписаны на следующие изменения.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Подписка на рассылку об изменениях.',
-            'subscribed'         => 'Вы подписались на рассылку email уведомлений. Проверьте вашу почту, чтобы подтвердить подписку.',
-            'verified'           => 'Ваша подписка подтверждена. Спасибо!',
-            'manage'             => 'Управление подпиской',
-            'unsubscribe'        => 'Отписаться от рассылки.',
-            'unsubscribed'       => 'Ваша подписка отменена.',
-            'failure'            => 'Произошла ошибка при подписке на рассылку.',
-            'already-subscribed' => 'Невозможно оформить подписку на :email, т.к. на него уже оформлена подписка.',
+            'manage_subscription' => 'We\'ve sent you an email, please click the link to manage your subscription',
+            'subscribe'           => 'Подписка на рассылку об изменениях.',
+            'subscribed'          => 'Вы подписались на рассылку email уведомлений. Проверьте вашу почту, чтобы подтвердить подписку.',
+            'updated-subscribe'   => 'You\'ve succesfully updated your subscriptions.',
+            'verified'            => 'Ваша подписка подтверждена. Спасибо!',
+            'manage'              => 'Управление подпиской',
+            'unsubscribe'         => 'Отписаться от рассылки.',
+            'unsubscribed'        => 'Ваша подписка отменена.',
+            'failure'             => 'Произошла ошибка при подписке на рассылку.',
+            'already-subscribed'  => 'Невозможно оформить подписку на :email, т.к. на него уже оформлена подписка.',
         ],
     ],
 

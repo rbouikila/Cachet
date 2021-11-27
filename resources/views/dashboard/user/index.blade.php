@@ -31,8 +31,7 @@
                             </div>
                             <div class="form-group">
                                 <label>{{ trans('forms.user.password') }}</label>
-                                <input type="password" class="form-control password-strength" name="password" value="" placeholder="{{ trans('forms.user.password') }}">
-                                <div class="strengthify-wrapper"></div>
+                                <input type="password" class="form-control" name="password" value="" placeholder="{{ trans('forms.user.password') }}">
                             </div>
                             <hr>
                             <div class="form-group">
@@ -54,13 +53,14 @@
                             @if($currentUser->hasTwoFactor)
                             <div class="form-group">
                                 <?php
-                                $google2fa_url = PragmaRX\Google2FA\Vendor\Laravel\Facade::getQRCodeGoogleUrl(
+                                $google2fa = (new \PragmaRX\Google2FA\Google2FA());
+                                $google2fa_url = $google2fa->getQRCodeUrl(
                                     'Cachet',
                                     $currentUser->email,
                                     $currentUser->google_2fa_secret
                                 );
                                 ?>
-                                <img src="{{ $google2fa_url }}" class="img-responsive">
+                                <img width="200" height="200" src="{{(new \chillerlan\QRCode\QRCode())->render($google2fa_url)}}"  alt="qr code"/>
                                 <span class='help-block'>{!! trans('forms.user.2fa.help') !!}</span>
                             </div>
                             @endif

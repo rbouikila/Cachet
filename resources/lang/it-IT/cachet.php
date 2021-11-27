@@ -23,6 +23,8 @@ return [
         'group' => [
             'other' => 'Altri componenti',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
@@ -32,7 +34,7 @@ return [
         'stickied'     => 'Stickied Incidents',
         'scheduled'    => 'Maintenance',
         'scheduled_at' => ', programmata il :timestamp',
-        'posted'       => 'Pubblicato :timestamp',
+        'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Analisi',
@@ -75,24 +77,29 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Iscriviti per ricevere gli aggiornamenti più recenti',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
         'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Iscriviti',
         'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Sei attualmente iscritto a tutti gli aggiornamenti.',
-            'my_subscriptions' => 'Sei attualmente iscritto ai seguenti suggerimenti.',
-            'manage_at_link'   => 'Manage your subscriptions at :link',
+            'notifications'       => 'Notifiche',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Sei attualmente iscritto a tutti gli aggiornamenti.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Sei attualmente iscritto ai seguenti suggerimenti.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Iscriviti agli aggiornamenti via email.',
-            'subscribed'         => 'Ti sei appena iscritto agli aggiornamenti email, controlla la tua casella per confermare la sottoscrizione',
-            'verified'           => 'La tua iscrizione &egrave; stata confermata. Grazie!',
-            'manage'             => 'Gestisci la tua iscrizione',
-            'unsubscribe'        => 'Annulla l\'iscrizione agli aggiornamenti email.',
-            'unsubscribed'       => 'La tua iscrizione &egrave; stata rimossa.',
-            'failure'            => 'Qualcosa è andato storto con l\'iscrizione.',
-            'already-subscribed' => 'Non è possibile iscrivere :email perchè risulta già iscritto.',
+            'manage_subscription' => 'We\'ve sent you an email, please click the link to manage your subscription',
+            'subscribe'           => 'Iscriviti agli aggiornamenti via email.',
+            'subscribed'          => 'Ti sei appena iscritto agli aggiornamenti email, controlla la tua casella per confermare la sottoscrizione',
+            'updated-subscribe'   => 'You\'ve succesfully updated your subscriptions.',
+            'verified'            => 'La tua iscrizione &egrave; stata confermata. Grazie!',
+            'manage'              => 'Gestisci la tua iscrizione',
+            'unsubscribe'         => 'Annulla l\'iscrizione agli aggiornamenti email.',
+            'unsubscribed'        => 'La tua iscrizione &egrave; stata rimossa.',
+            'failure'             => 'Qualcosa è andato storto con l\'iscrizione.',
+            'already-subscribed'  => 'Non è possibile iscrivere :email perchè risulta già iscritto.',
         ],
     ],
 

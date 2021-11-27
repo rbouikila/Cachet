@@ -23,6 +23,8 @@ return [
         'group' => [
             'other' => 'Andre komponenter',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
@@ -32,7 +34,7 @@ return [
         'stickied'     => 'Stickied Incidents',
         'scheduled'    => 'Maintenance',
         'scheduled_at' => ', planlagt til :timestamp',
-        'posted'       => 'Posted :timestamp',
+        'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Undersøger',
@@ -75,24 +77,29 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Tilmeld dig for at få de seneste opdateringer',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
         'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Abonner',
         'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Du abonner i øjeblikket på alle opdateringer.',
-            'my_subscriptions' => 'Du abonnere i øjeblikket på følgende opdateringer.',
-            'manage_at_link'   => 'Manage your subscriptions at :link',
+            'notifications'       => 'Notifikationer',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Du abonner i øjeblikket på alle opdateringer.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Du abonnere i øjeblikket på følgende opdateringer.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Abonner på email opdateringer.',
-            'subscribed'         => 'Du er blevet tilmeldt email notifikationer. Vi har sendt dig en bekræftelse på den indtastede email-adresse.',
-            'verified'           => 'Din tilmelding er nu blevet bekræftet, tak.',
-            'manage'             => 'Manage your subscription',
-            'unsubscribe'        => 'Afmeld email notifikationer.',
-            'unsubscribed'       => 'Du er nu blevet frameldt vores emailnotifikationer.',
-            'failure'            => 'Noget gik galt med bekræftelsen.',
-            'already-subscribed' => 'Kan ikke abonnere da :email allerede er tilmeldt.',
+            'manage_subscription' => 'We\'ve sent you an email, please click the link to manage your subscription',
+            'subscribe'           => 'Abonner på email opdateringer.',
+            'subscribed'          => 'Du er blevet tilmeldt email notifikationer. Vi har sendt dig en bekræftelse på den indtastede email-adresse.',
+            'updated-subscribe'   => 'You\'ve succesfully updated your subscriptions.',
+            'verified'            => 'Din tilmelding er nu blevet bekræftet, tak.',
+            'manage'              => 'Manage your subscription',
+            'unsubscribe'         => 'Afmeld email notifikationer.',
+            'unsubscribed'        => 'Du er nu blevet frameldt vores emailnotifikationer.',
+            'failure'             => 'Noget gik galt med bekræftelsen.',
+            'already-subscribed'  => 'Kan ikke abonnere da :email allerede er tilmeldt.',
         ],
     ],
 

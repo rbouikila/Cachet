@@ -23,6 +23,8 @@ return [
         'group' => [
             'other' => 'Andre komponenter',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
@@ -32,7 +34,7 @@ return [
         'stickied'     => 'Festede hendelser',
         'scheduled'    => 'Maintenance',
         'scheduled_at' => ', planlagt :timestamp',
-        'posted'       => 'Postet :timestamp',
+        'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Undersøkes',
@@ -75,24 +77,29 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Abonner for å få oppdateringene',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
         'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Abonner',
         'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Du abonnerer for øyeblikket på alle oppdateringer.',
-            'my_subscriptions' => 'Du abonnerer for øyeblikket på følgende oppdateringer.',
-            'manage_at_link'   => 'Manage your subscriptions at :link',
+            'notifications'       => 'Notifications',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Du abonnerer for øyeblikket på alle oppdateringer.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Du abonnerer for øyeblikket på følgende oppdateringer.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Abonner på e-postoppdateringer.',
-            'subscribed'         => 'Du abonnerer nå på e-postvarslinger, sjekk din e-post for å bekrefte abonneringen.',
-            'verified'           => 'Ditt epost abonnement er bekreftet!',
-            'manage'             => 'Administrer ditt abonnement',
-            'unsubscribe'        => 'Meld av e-postvarsling.',
-            'unsubscribed'       => 'Ditt e-postabonnement har blitt kansellert.',
-            'failure'            => 'Noe gikk galt med abonneringen.',
-            'already-subscribed' => 'Kan ikke abonnere: email fordi de allerede er abonnenter.',
+            'manage_subscription' => 'We\'ve sent you an email, please click the link to manage your subscription',
+            'subscribe'           => 'Abonner på e-postoppdateringer.',
+            'subscribed'          => 'Du abonnerer nå på e-postvarslinger, sjekk din e-post for å bekrefte abonneringen.',
+            'updated-subscribe'   => 'You\'ve succesfully updated your subscriptions.',
+            'verified'            => 'Ditt epost abonnement er bekreftet!',
+            'manage'              => 'Administrer ditt abonnement',
+            'unsubscribe'         => 'Meld av e-postvarsling.',
+            'unsubscribed'        => 'Ditt e-postabonnement har blitt kansellert.',
+            'failure'             => 'Noe gikk galt med abonneringen.',
+            'already-subscribed'  => 'Kan ikke abonnere: email fordi de allerede er abonnenter.',
         ],
     ],
 
