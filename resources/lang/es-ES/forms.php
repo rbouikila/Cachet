@@ -14,7 +14,7 @@ return [
     // Setup form fields
     'setup' => [
         'email'            => 'Correo electrónico',
-        'username'         => 'Nombre de usario',
+        'username'         => 'Nombre de usuario',
         'password'         => 'Contraseña',
         'site_name'        => 'Nombre del sitio',
         'site_domain'      => 'Dominio de sitio',
@@ -64,7 +64,7 @@ return [
         'templates'          => [
             'name'     => 'Nombre',
             'template' => 'Plantilla',
-            'twig'     => 'Las plantillas de incidentes pueden hacer uso del lenguaje de plantillas <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a>.',
+            'twig'     => 'Las plantillas de incidentes pueden hacer uso del lenguaje de plantillas <a href="https://twig.symfony.com" target="_blank">Twig</a>.',
         ],
     ],
 
@@ -78,7 +78,7 @@ return [
         'templates'    => [
             'name'     => 'Nombre',
             'template' => 'Plantilla',
-            'twig'     => 'Las plantillas de incidentes pueden hacer uso del lenguaje de plantillas <a href="http://twig.sensiolabs.org/" target="_blank">Twig</a>.',
+            'twig'     => 'Las plantillas de incidentes pueden hacer uso del lenguaje de plantillas <a href="https://twig.symfony.com" target="_blank">Twig</a>.',
         ],
     ],
 
@@ -205,7 +205,7 @@ return [
     ],
 
     'user' => [
-        'username'       => 'Nombre de usario',
+        'username'       => 'Nombre de usuario',
         'email'          => 'Correo electrónico',
         'password'       => 'Contraseña',
         'api-token'      => 'API Token',

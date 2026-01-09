@@ -1,4 +1,4 @@
-$(function () {
+(function () {
     // Ajax Setup
     $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
         var token;
@@ -313,12 +313,12 @@ $(function () {
     function goToStep(current, next) {
         // validation was ok. We can go on next step.
         $('.block-' + current)
-          .removeClass('show')
-          .addClass('hidden');
+            .removeClass('show')
+            .addClass('hidden');
 
         $('.block-' + next)
-          .removeClass('hidden')
-          .addClass('show');
+            .removeClass('hidden')
+            .addClass('show');
 
         $('.steps .step')
             .removeClass("active")
@@ -357,4 +357,4 @@ $(function () {
             if (_.isFunction(cancelCallback)) cancelCallback();
         });
     }
-});
+}());
